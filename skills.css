@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+body{
+    width: 100%;
+    height:100vh;
+    background-image:url("image/bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color:transparent;
+    position: sticky;
+    animation: slideleft 1s ease forwards;
+}
+.logo{
+    cursor: pointer;
+}
+nav a{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav a:hover{
+    color: cyan;
+    font-size: 20px;
+    animation: slideright 1s ease forwards;
+}
+.btn{
+        padding: 15px 20px;
+        border-radius: 5px;
+        background-color: cyan;
+        border: 3px solid aqua;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration:none ;
+        border-radius: 50px;
+        transition: 0.3s;
+        color: black;
+        animation: slideRight 1s ease;
+    }
+    .btn:hover{
+        color: white;
+        background-color: rgb(97, 88, 88);
+        box-shadow: 0 0 10px cyan,0 0 25px cyan,
+        0 0 50px cyan,0 0 100px cyan,
+        0 0 200px cyan,;
+    }
+    .SEO h1{
+        display: inline-block;
+        text-align: center;
+        padding: 15px 20px;
+        background-color: aqua;
+        font-size: 22px;
+        align-items: center;
+        border-radius: 50%;
+        margin-left: 500px;
+        margin-top: 10px;
+        box-shadow: 0 0 10px cyan,0 0 25px cyan,
+        0 0 50px cyan,0 0 75px cyan,
+        0 0 100px cyan,0 0 200px cyan;
+        animation: slideright 1s ease forwards;
+    }
+    .SEO{
+        display: flex;
+    }
+ .Box{
+    margin: 20px 80px;
+    width: 350px;
+    height: 500px;
+    box-shadow: 15px 0 50px black;
+    background-color:transparent;
+    overflow: hidden;
+    cursor: pointer;
+    animation: slideright 1s ease forwards;
+ }
+ .Box:hover{
+    background-color: rgba(0,0,0,0.3);
+
+ }
+ .Box{
+    text-align: center;
+    cursor: pointer;
+ }
+ .Box h2{
+    margin-top: 20px;
+    font-size: 25px;
+    color: cyan;
+ }
+ .Box p{
+    color: white;
+    text-align: start;
+    margin-top: 25px;
+    font-size: 20px;
+    margin-left: 20px;
+ }
+ @keyframes slideright{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+ }
+ @keyframes slideleft{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+ }
+@media (max-width:600px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 7px;
+        background-color: rgb(39, 38, 38);
+        position: sticky;
+        animation: slideleft 1s ease forwards;
+    }
+    .logo{
+        width: 120px;
+        height: 40px;
+        cursor: pointer;
+    }
+    nav a{
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    nav a:hover{
+        color: cyan;
+        font-size: 13px;
+        animation: slideright 1s ease forwards;
+    }
+    .btn{
+            padding: 4px 9px;
+            border-radius: 5px;
+            background-color: cyan;
+            border: 1px solid aqua;
+            font-size: 12px;
+            font-weight: 400;
+            text-decoration:none ;
+            border-radius: 25px;
+            transition: 0.3s;
+            color: black;
+            animation: slideRight 1s ease;
+        }
+        .btn:hover{
+            color: white;
+            background-color: rgb(97, 88, 88);
+            box-shadow: 0 0 10px cyan,0 0 25px cyan,
+            0 0 50px cyan,0 0 100px cyan,
+            0 0 200px cyan,;
+        }
+        .SEO{
+            display: contents;
+        }
+        .SEO h1{
+            display: inline-block;
+            text-align: center;
+            padding: 7px 10px;
+            background-color: aqua;
+            font-size: 12px;
+            align-items: center;
+            border-radius: 50%;
+            margin-left: 500px;
+            margin-top: 10px;
+            box-shadow: 0 0 10px cyan,0 0 25px cyan,
+            0 0 50px cyan,0 0 75px cyan,
+            0 0 100px cyan,0 0 200px cyan;
+            animation: slideright 1s ease forwards;
+        }
+     .Box{
+        margin: 15px 150px;
+        width: 250px;
+        height: 300px;
+        box-shadow: 15px 0 50px black;
+        background-color:transparent;
+        overflow: hidden;
+        cursor: pointer;
+        animation: slideright 1s ease forwards;
+     }
+     .Box:hover{
+        background-color: rgba(0,0,0,0.3);
+    
+     }
+     .Box{
+        text-align: center;
+        cursor: pointer;
+     }
+     .Box h2{
+        margin-top: 20px;
+        font-size: 18px;
+        color: cyan;
+     }
+     .Box p{
+        color: white;
+        text-align: start;
+        margin-top: 10px;
+        font-size: 12px;
+        margin-left: 20px;
+     }
+}
